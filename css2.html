@@ -1,0 +1,177 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>CSS Box model</title>
+        <style>
+            .padding {
+                 padding: 5px 10px 20px; 
+                /* padding-bottam: 10px; */
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 0cm;
+                border: 1px dotted red;
+                margin: 5px 10px 15px 20px;
+                margin-left: 10px;
+            }
+            #diff{
+                padding: 30px;
+                padding-bottom: 20px;
+                color:brown;
+           }
+           #padding{
+            padding: 20px;
+            padding-right: 30px;
+            color:black ;
+           
+           }
+h1,h2{
+    color:crimson;
+padding: 20px,30px,40px,34px;
+
+}
+.rectangle{
+    display: inline-block;
+    border: 2px solid rgb(255, 196, 0);
+    width: 200px;
+    height: 100px;
+    color: darkgoldenrod;
+    background-color: blueviolet;
+}
+/* Pseoudo selector
+selector:pseudo class*/
+.rectangle:hover{
+    background-color: darkgreen;
+}
+.rectangle1:hover{
+    background-color: gold;
+}
+.rectangle1{
+    display: inline-block;
+    border: 2px solid blue;
+    width: 200px;
+    height: 100px;  
+    background-color: blue;   
+
+}
+
+
+.fixedposition{
+   position: fixed;
+   bottom: 0;
+}
+.staticposition{
+   position: static;
+   top: 0;
+}
+.relativeposition{
+   position: relative;
+    top: 20px;
+    
+}
+.absoluteposition{
+  position: absolute;
+  top:0;
+  color: darkgoldenrod;
+  padding-left: 630px;
+
+}
+.parentrelative {
+    position:relative;
+}
+.topleft{
+    position:absolute;
+    top: 0;
+    left:18px
+}
+.bottomleft{
+    position:absolute;
+    bottom: 40px;
+    left:16px;
+    font-size:18px;
+}
+.bottomright{
+    position:absolute;
+    bottom:40px;
+    right:100px;
+    font-size: 15px;
+}
+.center{
+    position: relative;
+    bottom: 300px;
+     text-align: center;
+    
+}
+/* Descendant Selector
+div p{
+    color: brown;
+}
+/*  Child Selector */
+div > p{
+    color: chartreuse;
+
+}
+/*Adjacent Sibling Selector*/
+div + p{
+    color: darkgreen;
+}
+/* General Sibling Selector */
+div ~ p{
+    color: darkturquoise;
+}
+body{
+    background-color: seagreen;
+    background-image: url('mahindra-thar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="padding">Different selector</div>
+        <div>CSS Box Model</div>
+        <span class="rectangle"></span>
+        <span class="rectangle1"></span>
+         <!-- position property in css -->
+         
+         <div class="fixedposition">div is placed using position fixed</div>
+         <div class="staticposition"> div is placed using position staic</div>
+         <div class="relativeposition"> div is placed using position staic</div>
+         <div class="parentrelative">
+             <img src="mahindra-thar.jpg">
+             <div class="absoluteposition"><h1>Mahindra-thar</h1></div> 
+             <div class="topleft"><h1>Mahindra-thar</h1></div>  
+             <div class="bottomleft"><h1>Mahindra-thar</h1></div>
+             <div class="bottomright"><h1>Mahindra-thar</h1></div>
+             <div class="center"><h1>Mahindra-thar</h1></div>
+             <!-- <h1> class="absoluteposition">virat kohli-->
+             </div>
+        </div>
+
+      <div id="padding">id selector</div>
+        <h1>padding element</h1>
+        <h2>padding files</h2>
+
+        <!-- CSS Combinators -
+            1. Descendant Selector
+            2. Child Selector
+            3.Adjacent Sibling Selector
+            4.General Sibling Selector
+        
+        
+        
+        -->
+
+        <div>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <span>
+                <p>Lorem ipsum dolor sit.</p>
+            </span>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </body>
+</html>
+    <!-- Task- Creating different selector paddings-->
